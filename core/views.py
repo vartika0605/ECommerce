@@ -38,7 +38,7 @@ def is_valid_form(values):
 class HomeView(ListView):
     model = Item
     paginate_by = 4
-    template_name = "home.html"
+    template_name = "index.html"
 
 def search(request):
     query = request.GET.get("search")
